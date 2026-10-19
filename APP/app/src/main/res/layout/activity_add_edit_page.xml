@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6F0"
+    android:fillViewport="true"
+    tools:context=".Add_Edit_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="20dp"
+            android:text="Add / Edit Fault"
+            android:textColor="#4D0404"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Fault Title"
+            android:textColor="#4D0404"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/faultname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="#1E1E1E"
+            android:hint="e.g., Router Connection Loss"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Location"
+            android:textColor="#4D0404"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="#1E1E1E"
+            android:hint="e.g., Server Room 3B"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Device Type"
+            android:textColor="#4D0404"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="#1E1E1E"
+            android:hint="e.g., Cisco Switch / Access Point"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Priority"
+            android:textColor="#4D0404"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/High"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="#D32F2F"
+                android:text="High"
+                android:textColor="#4D0404" />
+
+            <RadioButton
+                android:id="@+id/Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="#D32F2F"
+                android:text="Medium"
+                android:textColor="#4D0404" />
+
+            <RadioButton
+                android:id="@+id/Low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#D32F2F"
+                android:text="Low"
+                android:textColor="#4D0404" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#89140D"
+            android:text="Save Fault"
+            android:textColor="#F8F6F0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1E1E1E"
+            android:text="Cancel"
+            android:textColor="#F8F6F0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
